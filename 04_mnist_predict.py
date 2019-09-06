@@ -17,5 +17,8 @@ import numpy as np
 image = np.expand_dims( test_images[0] , axis=0)
 
 # predict
-model.predict_classes( image )
-model.predict( image )
+classes = model.predict_classes( image )
+print (classes)
+
+probabilities = model.predict( image )
+print (probabilities)
