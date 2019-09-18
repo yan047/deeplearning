@@ -3,7 +3,7 @@ from keras import models
 from keras.models import load_model
 
 # load model 
-model = load_model('MNIST.model')
+model = load_model('MNIST.h5')
 
 # load data
 (train_images, train_labels), (test_images, test_labels) = mnist.load_data()

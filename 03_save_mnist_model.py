@@ -37,6 +37,8 @@ model.compile(optimizer='rmsprop',
               metrics=['accuracy'])
 model.fit(train_images, train_labels, epochs=5, batch_size=64)
 
-model.save('MNIST.model')
+model.save('MNIST.h5')
+# HDF5 format (Hierarchical Data Format)
+
 # from keras.models import load_model
 # model = load_model('MNIST.model')
