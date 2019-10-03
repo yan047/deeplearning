@@ -13,7 +13,12 @@ from keras.utils import to_categorical
 
 # create deep network.
 model = models.Sequential()
-model.add(layers.Conv2D(32, (3, 3), activation='relu', input_shape=(28, 28, 1)))
+
+#model.add(layers.Conv2D(32, (3, 3), activation='relu', input_shape=(28, 28, 1)))
+# keras.layers.Conv2D(filters, kernel_size, strides=(1, 1), padding='valid', data_format=None, dilation_rate=(1, 1), activation=None, use_bias=True, kernel_initializer='glorot_uniform', bias_initializer='zeros', kernel_regularizer=None, bias_regularizer=None, activity_regularizer=None, kernel_constraint=None, bias_constraint=None)
+# 32 is a magic number, 32 kernels to apply, then 32 feature maps being generated.
+model.add(layers.Conv2D(filters = 32, kernel_size =(3, 3), activation='relu', input_shape=(28, 28, 1)))
+
 model.add(layers.MaxPooling2D((2, 2)))
 model.add(layers.Conv2D(64, (3, 3), activation='relu'))
 model.add(layers.MaxPooling2D((2, 2)))
