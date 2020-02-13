@@ -7,7 +7,7 @@ b = tf.Variable(tf.zeros(shape=(2)), name="b")
 def model(x):
     return W * x + b
 
-m = model([0,1])
+m = model([0,1]) # m is a tf.Tensor
 
 print(m)
 
