@@ -1,5 +1,5 @@
-from keras import layers, models
-from keras.utils import plot_model
+from tensorflow.keras import layers, models
+from tensorflow.keras.utils import plot_model
 
 # create deep network.
 model = models.Sequential()

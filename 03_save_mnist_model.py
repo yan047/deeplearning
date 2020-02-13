@@ -1,7 +1,7 @@
-from keras.datasets import mnist
-from keras import models
-from keras import layers
-from keras.utils import to_categorical
+from tensorflow.keras.datasets import mnist
+from tensorflow.keras import models
+from tensorflow.keras import layers
+from tensorflow.keras.utils import to_categorical
 
 # load images
 (train_images, train_labels), (test_images, test_labels) = mnist.load_data()

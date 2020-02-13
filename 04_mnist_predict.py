@@ -1,6 +1,6 @@
-from keras.datasets import mnist
-from keras import models
-from keras.models import load_model
+from tensorflow.keras.datasets import mnist
+from tensorflow.keras import models
+from tensorflow.keras.models import load_model
 
 # load model 
 model = load_model('MNIST.h5')
